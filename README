@@ -3,8 +3,7 @@ usage: ./convert_video.pl -i <indir>
 Reprocesses all video files in directory using HandBrakeCLI
 
 Options:
-  -i : String: In directory
-  -o : String: Out directory (oiptions).  Default will be same as -i
-  -e : Quoted String: HandBrake preset encoder option.  Default: "H.265 NVENC 1080p"
-  -d : Boolean: Delete original file after encoding.  Default: 0
-
+  -i : String: In directory (required)
+  -o : String: Out directory (optional).  Default will be same as -i and output files will be placed where input files were found.
+  -e : Quoted String: HandBrake preset encoder option (optional).  Default: "H.265 NVENC 1080p".  Note, this is for NVIDIA GPU acceleration.
+  -d : Boolean: Delete original file after encoding (optional).  Default: 0
