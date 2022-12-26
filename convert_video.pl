@@ -17,9 +17,6 @@ GetOptions("h|help" => \$help,
 
 $encoder = "H.265 NVENC 1080p" unless $encoder;
 
-print "!!!: $dir $help";
-
-
 if ($help or !$dir) { print qq{
 
 usage: $0 -i <indir>
